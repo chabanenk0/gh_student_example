@@ -12,5 +12,10 @@ abstract class AbstractPerson
     public abstract function getBirthday();
     public abstract function setBirthday($birthday);
 
+    public function __set($property, $value)
+    {
+        $this->$property = $value;
+    }
+
 
 }

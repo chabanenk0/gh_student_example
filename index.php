@@ -4,9 +4,11 @@ require_once 'vendor/autoload.php';
 
 use Students\Person;
 use Students\Student;
+use Students\Workers\Worker;
 
 $person = new Person();
-$person->setFirstName('Vasya');
+//$person->setFirstName('Vasya');
+$person->firstName = 'Vasya';
 $person->setLastName('Petrov');
 $person->setBirthday('1989-01-01');
 
@@ -24,8 +26,18 @@ echo '<br><br>';
 echo 'Student:';
 echo $student->__toString();
 
-$array = [$student, $person];
+$worker = new Worker();
+$worker->setFirstName('Senya');
+$worker->setLastName('Petrov');
+$worker->setBirthday('1989-03-04');
+$worker->setCompany('Melkosoft');
+$worker->setPosition('Dvornik');
+
+
+
+$array = [$student, $person, $worker];
 echo '<br><br>output array:<br>';
-foreach ($array as $person) {
-    echo $person;
+foreach ($array as $personItem) {
+    echo $personItem;
+    echo '<br>';
 }
