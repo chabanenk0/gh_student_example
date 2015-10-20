@@ -1,0 +1,19 @@
+{
+    "name": "geekhub/students",
+    "description": "Students class",
+    "authors": [
+        {
+            "name": "Dmitry Chabanenko",
+            "email": "chdn6026@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Students\\": "src/Students",
+            "Workers\\": "src/Workers"
+        }
+    },
+
+    "minimum-stability": "dev",
+    "require": {}
+}
