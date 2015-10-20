@@ -1,6 +1,6 @@
 <?php
 
-namespace Students\Workers;
+namespace Workers;
 
 use Students\Person;
 

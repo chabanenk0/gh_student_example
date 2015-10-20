@@ -58,17 +58,5 @@ class Person extends AbstractPerson
         $this->birthday = $birthday;
     }
 
-    /**
-     * @return  string
-     */
-    public function __toString()
-    {
-        $s = '';
-        $s .= 'First Name: ' . $this->getFirstName() . "<br>\n";
-        $s .= 'Last Name: ' . $this->getLastName() . "<br>\n";
-        $s .= 'Birthday: ' . $this->getBirthday() . "<br>\n";
-
-        return $s;
-    }
 
 }

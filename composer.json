@@ -8,8 +8,12 @@
         }
     ],
     "autoload": {
-        "psr-0": { "Students": "src/" }
+        "psr-4": {
+            "Students\\": "src/Students",
+            "Workers\\": "src/Workers"
+        }
     },
+
     "minimum-stability": "dev",
     "require": {}
 }

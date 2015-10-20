@@ -4,11 +4,11 @@ require_once 'vendor/autoload.php';
 
 use Students\Person;
 use Students\Student;
-use Students\Workers\Worker;
+use Workers\Worker;
 
 $person = new Person();
-//$person->setFirstName('Vasya');
-$person->firstName = 'Vasya';
+$person->setFirstName('Vasya');
+//$person->firstName = 'Vasya';
 $person->setLastName('Petrov');
 $person->setBirthday('1989-01-01');
 
