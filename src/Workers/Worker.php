@@ -4,7 +4,7 @@ namespace Workers;
 
 use Students\Person;
 
-class Worker extends Person //implements WorkerInterface
+class Worker extends Person implements WorkerInterface
 {
     protected $company;
 
